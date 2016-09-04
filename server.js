@@ -13,3 +13,20 @@ function handler(req, resp) {
 server.on('request', handler);
 
 server.listen(port);
+
+
+
+var http = require('http');
+var options = [{
+  host: 'lahermandad.herokuapp.com'
+}];
+
+
+setInterval(function(){
+	options.forEach(function(e){
+		http.get(e, function(res) {
+		  console.log('STATUS: ' + res.statusCode);
+		  console.log('HEADERS: ' + JSON.stringify(res.headers));
+		});
+	});
+},5000);
