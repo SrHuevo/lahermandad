@@ -9,7 +9,7 @@ function get(req, resp) {
 
 function getRedirect(url) {
 	if(url === '/apocalipsiszombie'){
-		return 'http://hermandadurjc.wixsite.com/paginaoficial/apcalipsiszombie';
+		return 'http://hermandadurjc.wixsite.com/paginaoficial/apocalipsiszombie';
 	} else if(url) {
 		return 'http://hermandadurjc.wixsite.com/paginaoficial' + url;
 	} else {
