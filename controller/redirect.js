@@ -2,7 +2,10 @@ function get(req, resp) {
 	console.log('redirect: get')
 	var redirect = getRedirect(req.url);
 	resp.writeHead(301,
-	  {Location: redirect}
+	  {
+		  Location: redirect,
+		  Cache-Control: 'no-cache'
+	  }
 	);
 	resp.end();
 }
