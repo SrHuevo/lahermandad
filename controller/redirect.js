@@ -4,7 +4,7 @@ function get(req, resp) {
 	resp.writeHead(301,
 	  {
 		  Location: redirect,
-		  Cache-Control: 'no-cache'
+		  'Cache-Control': 'no-cache'
 	  }
 	);
 	resp.end();
