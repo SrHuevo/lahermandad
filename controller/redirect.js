@@ -8,9 +8,7 @@ function get(req, resp) {
 }
 
 function getRedirect(url) {
-	if(url === '/apocalipsiszombie'){
-		return 'http://hermandadurjc.wixsite.com/paginaoficial/apocalipsiszombie';
-	} else if(url) {
+	if(url) {
 		return 'http://hermandadurjc.wixsite.com/paginaoficial' + url;
 	} else {
 		return 'http://hermandadurjc.wixsite.com/paginaoficial';
