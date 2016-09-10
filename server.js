@@ -1,17 +1,17 @@
 var express = require('express');
-var bodyParser = require('body-parser');
-var sellTikets = require('./controller/sell-tikets');
 var redirect = require('./controller/redirect');
 
 var app = express();
 var port = process.env.PORT || 8080;
 
-app.get('/api/venta', sellTikets.get);
-app.post('/api/venta', sellTikets.post);
 app.get('/*', redirect.get);
 
 app.listen(port);
 
+
+
+
+//Heroku free no sleep
 var http = require('http');
 var options = [{
   host: 'lahermandad.herokuapp.com'
