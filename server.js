@@ -25,8 +25,8 @@ var random = function(){
 }
 setInterval(function(){
 	options.forEach(function(e){
-		http.get(e, function(res) {
-		  console.log('STATUS: ' + res.statusCode);
-		});
+		//http.get(e, function(res) {
+		  //console.log('STATUS: ' + res.statusCode);
+		//});
 	});
 }, random());
