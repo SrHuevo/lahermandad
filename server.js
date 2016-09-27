@@ -14,7 +14,7 @@ app.listen(port);
 //Heroku free no sleep
 var http = require('http');
 var options = [{
-  host: 'lahermandad.herokuapp.com'
+  host: 'http://www.lahermandad.es'
 }];
 
 var min = 60000;
